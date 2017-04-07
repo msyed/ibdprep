@@ -5,6 +5,7 @@ from copy import copy
 
 #web application framework written in python
 from flask import Flask, abort, session, request, url_for, make_response, redirect, render_template
+from flask_sslify import SSLify
 
 # #to restrict types of files
 # from werkzeug import secure_filename
@@ -25,24 +26,25 @@ from flask import Flask, abort, session, request, url_for, make_response, redire
 # from RAKE import rake
 
 
-PRODUCTION = True
-try:
-	os.chdir('var/www/staketrak/staketrak')
-except OSError:
-	PRODUCTION = False
+# PRODUCTION = True
+# try:
+# 	os.chdir('var/www/staketrak/staketrak')
+# except OSError:
+# 	PRODUCTION = False
 
 #define constants
-UPLOAD_FOLDER = 'test_files'
-ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'docx', 'doc'])
+# UPLOAD_FOLDER = 'test_files'
+# ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'docx', 'doc'])
 
-MAX_SENT_PER_ENTITY = 10
-MAX_TAGS_PER_ENTITY = 20
-MAX_MENTIONS_PER_ENTITY = 20
+# MAX_SENT_PER_ENTITY = 10
+# MAX_TAGS_PER_ENTITY = 20
+# MAX_MENTIONS_PER_ENTITY = 20
 
 # LOGINS = dbHandler.retrieveUsers()
 
 #create a flask instance 
 app = Flask(__name__)
+sslify = SSLify(app)
 
 # secret keyq
 app.secret_key = '\xd3\xbdMBJ\xbb\xfe\x8d\xe4\xe9\xb8\x15\xde]\xd9ei\xfb\x8f1\xb2=O\x16'
@@ -199,4 +201,4 @@ def index():
 
 #run app and use debugger to check Flask errors  
 if __name__ == '__main__':
-	app.run(debug = True)
+	app.run(debug = False)
