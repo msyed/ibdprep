@@ -672,6 +672,156 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
     font-size: 15px;
     color: #7e7e7e;
 }
+
+
+/*--
+  contact_real start
+--*/
+
+#contact_real {
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.contact_real {
+    text-align: left;
+}
+.contact_real .caption {
+    text-align: center;
+}
+.contact_real .caption h3 {
+    margin: 0 0 10px;
+    color: #333333;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.contact_real .icon-box {
+    display: inline-block;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+}
+.contact_real .icon-box:before {
+    display: block;
+    content: '';
+    position: relative;
+    top: 75px;
+    width: 100px;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    background-color: #cbcbcd;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -khtml-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.contact_real .icon-box .icon {
+    background-color: #26282b;
+    border-radius: 5px;
+    display: inline-block;
+    height: 75px;
+    left: 36%;
+    position: relative;
+    top: 12px;
+    width: 75px;
+    -webkit-transform: rotate(50deg);
+       -moz-transform: rotate(50deg);
+        -ms-transform: rotate(50deg);
+         -o-transform: rotate(50deg);
+            transform: rotate(50deg);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec64e), color-stop(100%,#41aba0));
+  background: -webkit-linear-gradient(-45deg, #8ec64e 0%,#41aba0 100%);
+  background: -o-linear-gradient(-45deg, #8ec64e 0%,#41aba0 100%);
+  background: -ms-linear-gradient(-45deg, #8ec64e 0%,#41aba0 100%);
+  background: linear-gradient(135deg, #8ec64e 0%,#41aba0 100%);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -khtml-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.contact_real:hover .icon-box .icon {
+    background-color: #41aba0;
+}
+
+.contact_real .icon-box .icon i {
+    color: #fff;
+    font-size: 30px;
+    height: 75px;
+    line-height: 70px;
+    text-align: center;
+    width: 75px;
+    display: inline-block;
+    -webkit-transform: rotate(-50deg);
+       -moz-transform: rotate(-50deg);
+        -ms-transform: rotate(-50deg);
+         -o-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+}
+
+#contact_real .thumbnail {
+    border: 2px solid #DEDEDE;
+    border-radius: 0px;
+    padding: 40px 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+#contact_real .thumbnail:hover {
+    background-color: #41aba0;
+    border: 2px solid #41aba0;
+    opacity: 1;
+}
+.thumbnail .icon {
+    font-size: 50px;
+}
+#contact_real .thumbnail:hover .icon,
+#contact_real .thumbnail:hover .caption h3,
+#contact_real .thumbnail:hover .caption p {
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+#contact_real .thumbnail img {
+    padding-bottom: 30px;
+}
+#contact_real .thumbnail .img-adjust {
+    margin-top: 10px;
+    position: relative;
+}
+#contact_real .thumbnail .caption h3 {
+    color: #333333;
+    font-weight: 300;
+    font-size: 25px;
+    padding-bottom: 22px;
+}
+#contact_real .caption p {
+    line-height: 1.5;
+    font-size: 15px;
+    color: #7e7e7e;
+}
+
+
+/*--
+  contact_real end
+--*/
+
+
+
 /*--
     About start
 --*/
